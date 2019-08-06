@@ -8,12 +8,11 @@
       <input type="password" placeholder="Enter Password" [(ngModel)]="password" name="psw" required>
           
       <button type="submit" (click)="login(username,password)">Login</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
 
     </div>
   
     <div class="container">
-      <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+      <button type="button" (click)="goToRegistration()" class="cancelbtn">Register</button>
       <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
     </div>
 </div>

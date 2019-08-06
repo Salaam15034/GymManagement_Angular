@@ -20,6 +20,10 @@ export class LoginComponent implements OnInit {
     this.globalService.IsLoggedIn.next(true);
     this.router.navigate(['/home']);
   }
+  goToRegistration(){
+    this.globalService.IsLoggedIn.next(false);
+    this.router.navigate(['/registration']);
+  }
 
 
 
